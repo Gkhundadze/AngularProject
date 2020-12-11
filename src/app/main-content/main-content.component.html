@@ -1,0 +1,13 @@
+<div class="main_div">
+    <div class="screen">
+        <span 
+        [class.content-negative]="counter < 0"
+        [class.content-zero]="counter == 0"
+        [class.content-warning]="counter >= 10" 
+        [class.content-danger]="counter >= 20"
+        [class.content-just-stop]="counter >= 30"
+            >{{counter}}</span>
+    </div>
+    <button (click)="inc()" class="button-left">Increase +</button>
+    <button (click)="dec()" class="button-right">Decrease -</button>
+</div>
