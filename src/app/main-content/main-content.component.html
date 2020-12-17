@@ -1,13 +1,24 @@
 <div class="main_div">
     <div class="screen">
+        <p class="checker" 
+        [class.content-negative]="counter < 0"
+        [class.content-zero]="counter === 0"
+        [class.content-warning]="counter >= 10" 
+        [class.content-danger]="counter >= 20"
+        [class.content-just-stop]="counter >= 30"
+        >{{counterState}}</p>
         <span 
         [class.content-negative]="counter < 0"
-        [class.content-zero]="counter == 0"
+        [class.content-zero]="counter === 0"
         [class.content-warning]="counter >= 10" 
         [class.content-danger]="counter >= 20"
         [class.content-just-stop]="counter >= 30"
             >{{counter}}</span>
     </div>
+    
     <button (click)="inc()" class="button-left">Increase +</button>
+    <button (click)="reset()" class="button-reset">Reset to 0</button>
     <button (click)="dec()" class="button-right">Decrease -</button>
+    <button (click)="decTwoTimes()" class="button-decTwoTimes">Decrease x2</button>
+    <button (click)="incTwoTimes()" class="button-incTwoTimes">Increase x2</button>
 </div>

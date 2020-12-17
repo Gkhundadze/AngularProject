@@ -16,6 +16,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px #000;
 }
 .screen span{
     color: #fff;
@@ -24,6 +26,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.checker{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    
 }
 .button-left{
     position: absolute;
@@ -40,6 +52,36 @@
     bottom: 5px;
     right: 100px;
     background-color: #4CAF50;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.button-reset{
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    background-color: blue;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translateX(50%);
+}
+.button-decTwoTimes{
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    background-color: #4CAF50;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.button-incTwoTimes{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    background-color: #c4564e;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
