@@ -15,10 +15,10 @@
         [class.content-just-stop]="counter >= 30"
             >{{counter}}</span>
     </div>
-    
-    <button (click)="inc()" class="button-left">Increase +</button>
-    <button (click)="reset()" class="button-reset">Reset to 0</button>
-    <button (click)="dec()" class="button-right">Decrease -</button>
-    <button (click)="decTwoTimes()" class="button-decTwoTimes">Decrease x2</button>
-    <button (click)="incTwoTimes()" class="button-incTwoTimes">Increase x2</button>
+    <input #inputNumber type="number"/>
+    <button (click)="incOrDec('+')" class="button-left">Increase +</button>
+    <button (click)="incOrDec('reset')" class="button-reset">Reset to 0</button>
+    <button (click)="incOrDec('-')" class="button-right">Decrease -</button>
+    <button (click)="incOrDec('-x2')" class="button-decTwoTimes">Decrease x2</button>
+    <button (click)="incOrDec('+x2')" class="button-incTwoTimes">Increase x2</button>
 </div>
